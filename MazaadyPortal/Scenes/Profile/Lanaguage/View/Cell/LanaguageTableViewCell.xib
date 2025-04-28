@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="LanaguageTableViewCell" customModule="MazaadyPortal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="283" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="283" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foa-wS-dRD">
+                        <rect key="frame" x="12" y="12" width="259" height="40"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="auW-vE-5JO">
+                                <rect key="frame" x="4" y="4" width="251" height="32"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio" translatesAutoresizingMaskIntoConstraints="NO" id="chU-2T-XN6" userLabel="Radio Button">
+                                        <rect key="frame" x="0.0" y="6" width="20" height="20"/>
+                                        <color key="tintColor" name="Primary"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="jqO-g1-HXa"/>
+                                            <constraint firstAttribute="height" constant="20" id="lG7-Wt-PH5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MQ-ol-wTo" userLabel="Code Label">
+                                        <rect key="frame" x="32" y="6" width="219" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="YXy-f5-GpQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" name="grayG3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="auW-vE-5JO" firstAttribute="top" secondItem="foa-wS-dRD" secondAttribute="top" constant="4" id="E7M-dr-z3l"/>
+                            <constraint firstAttribute="bottom" secondItem="auW-vE-5JO" secondAttribute="bottom" constant="4" id="EEK-mb-1EU"/>
+                            <constraint firstAttribute="trailing" secondItem="auW-vE-5JO" secondAttribute="trailing" constant="4" id="cEt-Eo-sXf"/>
+                            <constraint firstItem="auW-vE-5JO" firstAttribute="leading" secondItem="foa-wS-dRD" secondAttribute="leading" constant="4" id="ovt-Nc-7nO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="foa-wS-dRD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Suv-xD-oWM"/>
+                    <constraint firstItem="foa-wS-dRD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="ay1-5A-T7d"/>
+                    <constraint firstAttribute="trailing" secondItem="foa-wS-dRD" secondAttribute="trailing" constant="12" id="psW-Q8-I0i"/>
+                    <constraint firstAttribute="bottom" secondItem="foa-wS-dRD" secondAttribute="bottom" constant="12" id="xaa-fW-xpE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="selectedImageView" destination="chU-2T-XN6" id="2yb-Tt-beF"/>
+                <outlet property="titleLabel" destination="0MQ-ol-wTo" id="BGU-FP-1KG"/>
+            </connections>
+            <point key="canvasLocation" x="48.091603053435115" y="43.661971830985919"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio" width="24" height="24"/>
+        <namedColor name="Primary">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayG3">
+            <color red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
