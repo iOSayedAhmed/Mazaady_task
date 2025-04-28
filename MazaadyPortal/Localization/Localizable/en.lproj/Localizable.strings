@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  TON
+
+  Created by iOSAYed on 26/04/2025.
+  
+*/
+// MARK: - TabBar
+"home" = "Home";
+"search" = "Search";
+"cart" = "Cart";
+"profile" = "Profile";
+
+// MARK: - Profile Page
+"following" = "Following";
+"followers" = "Followers";
+"products" = "Products";
+"reviews" = "Reviews";
+"price" = "Price";
+"lotStarts" = "Lot Starts";
+"offerPrice" = "Offer Price";
+"topTags" = "Top Tags";
+"language" = "Language";
+"currentLanguage" = "English";
+"english" = "English";
+"arabic" = "Arabic";
+
